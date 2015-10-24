@@ -3,6 +3,9 @@ dateinfo:
 service:
   date: ${random.value}
 
+server:
+  port: 9001
+
 eureka:
   instance:
     metadataMap:
