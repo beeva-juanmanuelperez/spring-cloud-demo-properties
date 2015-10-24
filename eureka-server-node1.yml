@@ -3,9 +3,9 @@ server:
 
 eureka:
   instance:
-    hostname: eureka-server-node2
+    hostname: localhost
   client:
     registerWithEureka: false
     fetchRegistry: false
     serviceUrl:
-      defaultZone: http://eureka-server-node2:8762/eureka/
+      defaultZone: ${eureka.instance.hostname}:8762/eureka/
