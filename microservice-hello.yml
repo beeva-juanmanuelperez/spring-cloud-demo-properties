@@ -1,8 +1,8 @@
 server:
   port: 9200
 
-myprops:
-  alias: CENTRO INNOVACION 2
+remoteProperties:
+  myRemoteProperty: myRemotePropertyValue
 
 eureka:
    client:

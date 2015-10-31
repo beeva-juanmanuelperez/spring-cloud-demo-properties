@@ -4,6 +4,9 @@ server:
 eureka:
   instance:
     hostname: localhost
+    leaseRenewalIntervalInSeconds: 30
   client:
     serviceUrl:
       defaultZone: http://localhost:8761/eureka/
+  metadataMap:
+    instanceId: eureka-server-node2
