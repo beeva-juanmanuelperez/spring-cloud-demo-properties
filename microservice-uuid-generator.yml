@@ -1,8 +1,5 @@
 server:
-  port: 9300
-
-microservice:
-  invoked: microservice-uuid-generator
+  port: 9400
 
 eureka:
    client:
