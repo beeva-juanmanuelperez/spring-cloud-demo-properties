@@ -9,7 +9,7 @@ eureka:
     instanceId: ${spring.application.name}:${spring.application.instance_id:${random.value}}
 
 person:
-  names:
+  namePool:
     - Juan Manuel
     - Daniel
     - Cristina
@@ -18,7 +18,7 @@ person:
     - Pablo
     - Tomás
     - Clara
-  surnames:
+  surnamePool:
     - Pérez
     - Rodríguez
     - Gaitero
@@ -26,3 +26,7 @@ person:
     - Aranda
     - Gómez
     - Muñoz
+  #name: Juan Manuel
+  #surname: Pérez
+  #age: 34
+  #location: Centro de Innovación
