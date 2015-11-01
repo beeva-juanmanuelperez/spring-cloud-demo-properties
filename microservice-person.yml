@@ -1,0 +1,28 @@
+server:
+  port: 0
+
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://localhost:8761/eureka/
+  instance:
+    instanceId: ${spring.application.name}:${spring.application.instance_id:${random.value}}
+
+person:
+  names:
+    - Juan Manuel
+    - Daniel
+    - Cristina
+    - Laura
+    - Jesús
+    - Pablo
+    - Tomás
+    - Clara
+  surnames:
+    - Pérez
+    - Rodríguez
+    - Gaitero
+    - Carrasco
+    - Aranda
+    - Gómez
+    - Muñoz
