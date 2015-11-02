@@ -9,6 +9,9 @@ eureka:
     metadataMap:
       instanceId: ${spring.application.name}:${spring.application.instance_id:${random.value}}
 
+microservice:
+  uuid-generator: microservice-uuid-generator
+
 person:
   namePool:
     - Juan Manuel
