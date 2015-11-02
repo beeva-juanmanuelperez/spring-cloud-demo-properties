@@ -6,7 +6,8 @@ eureka:
     serviceUrl:
       defaultZone: http://localhost:8761/eureka/
   instance:
-    instanceId: ${spring.application.name}:${spring.application.instance_id:${random.value}}
+    metadataMap:
+      instanceId: ${spring.application.name}:${spring.application.instance_id:${random.value}}
 
 person:
   namePool:

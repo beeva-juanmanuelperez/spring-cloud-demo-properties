@@ -3,26 +3,10 @@ server:
 
 eureka:
   instance:
-    hostname: localhost
+    hostname: eureka-1
     leaseRenewalIntervalInSeconds: 30
   client:
     serviceUrl:
-      defaultZone: http://localhost:8762/eureka/
+      defaultZone: http://eureka-2:8762/eureka/
   metadataMap:
     instanceId: eureka-server-node1
-
-#eureka:
-#  client:
-#    region: eu-west-1
-#    preferSameZone: false
-#    registerWithEureka: true
-#    fetchRegistry: true
-#    useDnsForFetchingServiceUrls: true
-#    eurekaServerDNSName: eureka.internalpreopenp.com
-#    eurekaServerPort: 8761
-#    eurekaServerURLContext: eureka
-#  server:
-#    waitTimeInMsWhenSyncEmpty: 0
-#  instance:
-#    leaseRenewalIntervalInSeconds: 30
-#
