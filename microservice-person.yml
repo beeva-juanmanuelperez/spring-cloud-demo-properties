@@ -13,6 +13,7 @@ microservice:
   uuid-generator: microservice-uuid-generator
 
 person:
+  uuidSourceName: microservice-uuid-generator
   namePool:
     - Juan Manuel
     - Daniel
