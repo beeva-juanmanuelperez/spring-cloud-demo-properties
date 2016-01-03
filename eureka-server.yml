@@ -4,10 +4,9 @@ server:
 eureka:
   instance:
     hostname: localhost
-    metadataMap:
-      instanceId: ${spring.application.name}:${spring.application.instance_id:${random.value}}
   client:
-    registerWithEureka: false
-    fetchRegistry: false
+    registerWithEureka: false # We don't want Eureka server to work as client too
+    fetchRegistry: false      # Eureka clients hold a local cache that updates periodically (30 seconds by default).
+                              # Setting this property to true disables this update
     serviceUrl:
       defaultZone: http://${eureka.instance.hostname}:${server.port}/eureka/

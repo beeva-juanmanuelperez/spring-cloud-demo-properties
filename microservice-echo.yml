@@ -1,10 +1,15 @@
 server:
-  port: 9300
+  port: 0 # Setting port 0 will use a random port
 
 microservice:
   invoked: microservice-uuid-generator
 
 eureka:
-   client:
+  client:
     serviceUrl:
       defaultZone: http://localhost:8761/eureka/
+  ### By default, it is not allowed to have several instances of the same microservice in the same host, as this host
+  ### is used for microservice registration. We can bypass this restriction modifying this.
+  #instance:
+  #  metadataMap:
+  #    instanceId: ${spring.application.name}:${spring.application.instance_id:${random.value}}

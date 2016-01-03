@@ -3,7 +3,7 @@ server:
 
 eureka:
   instance:
-    hostname: eureka-2
+    hostname: eureka-2    # To launch several instances of eureka locally, you need to bind this host to 127.0.0.1 in /etc/hosts
     leaseRenewalIntervalInSeconds: 30
   client:
     serviceUrl:
