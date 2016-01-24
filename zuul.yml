@@ -9,3 +9,12 @@ eureka:
   client:
     serviceUrl:
       defaultZone: http://localhost:8761/eureka/
+
+# Enables retry for failed requests (not working atm)
+#zuul:
+#  retryable: true
+#
+#ribbon:
+#  MaxAutoRetries: 100
+#  MaxAutoRetriesNextServer: 100
+#  OkToRetryOnAllOperations: true
