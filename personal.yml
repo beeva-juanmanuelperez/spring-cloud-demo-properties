@@ -1,0 +1,12 @@
+service:
+  id: ${random.value}
+personal:
+  name: FRANCISCO
+  surname: MARTÍN GOMEZ
+eureka:
+  instance:
+    metadataMap:
+      instanceId: ${spring.application.name}:${spring.application.instance_id:${random.value}}
+  client:
+    serviceUrl:
+      defaultZone: http://localhost:8761/eureka/

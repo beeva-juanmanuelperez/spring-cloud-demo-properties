@@ -1,0 +1,11 @@
+server:
+  port: 8902
+postal:
+  country: ESPAÑA
+  province: MADRID
+  locality: GETAFE
+  postalcode: 28905
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://localhost:8761/eureka/
