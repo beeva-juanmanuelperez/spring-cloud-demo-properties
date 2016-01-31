@@ -3,7 +3,7 @@ server:
 postal:
   country: ESPAÑA
   province: MADRID
-  locality: GETAFE
+  locality: GETAFE1
   postalcode: 28905
 eureka:
   client:
