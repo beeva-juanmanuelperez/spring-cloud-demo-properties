@@ -5,10 +5,10 @@ spring:
   application:
     name: zuul
 
- eureka:
-   client:
-     serviceUrl:
-       defaultZone: http://localhost:8761/eureka/
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://localhost:8761/eureka/
 
 # Enables retry for failed requests (not working atm)
 #zuul:
